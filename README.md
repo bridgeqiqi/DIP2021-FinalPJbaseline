@@ -27,6 +27,8 @@ This pipeline is a simple framework for crowd counting task including four folde
 
 The density map generation codes are in Make_Datasets folders.
 
+After all density maps are generated, run ```ls -R /xx/xxx/xxx/*.jpg > train.txt```, ```ls -R /xx/xxx/xxx/*.jpg > val.txt```, ```ls -R /xx/xxx/xxx/*.jpg > test.txt``` to generate txt files for training, validating and testing.
+
 # NWPU Contest Platform
 https://www.crowdbenchmark.com/nwpucrowd.html 
 
