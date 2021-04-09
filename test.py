@@ -81,6 +81,7 @@ if args.dataset == 'shanghaitech':
         epoch_mae /= len(test_loader.dataset)
         epoch_rmse_loss = math.sqrt(epoch_rmse_loss / len(test_loader.dataset))
     print("bestmae: ", epoch_mae)
+    print("rmse: ", epoch_rmse_loss)
 elif args.dataset == 'nwpu':
     results = []
     with torch.no_grad():
