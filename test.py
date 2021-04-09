@@ -20,10 +20,10 @@ from tqdm import tqdm
 parser = argparse.ArgumentParser(description='Test crowdcounting model')
 
 parser.add_argument('--dataset', type=str, default='shanghaitech')
-parser.add_argument('--test-files', type=str, default='/mnt/pami14/jqgao/NWPU-Crowd/test_images.txt')
-parser.add_argument('--best-model', type=str, default='/home/jqgao/workspace/CrowdCounting/pa-csrnet-fully/bestvalmodel.pth')
+parser.add_argument('--test-files', type=str, default='/home/jqgao/workspace/CrowdCounting/TrainingTestingFileLists/ShanghaiTechPartA_full_origin_test.txt')
+parser.add_argument('--best-model', type=str, default='/home/jqgao/workspace/DIP2021/checkpoints/demo/bestvalmodel.pth')
 parser.add_argument('--use-avai-gpus', action='store_true')
-parser.add_argument('--gpu-devices', type=str, default='7')
+parser.add_argument('--gpu-devices', type=str, default='0')
 parser.add_argument('--model', type=str, default='CSRNet')
 parser.add_argument('--test-batch', type=int, default=1)
 parser.add_argument('--seed', type=int, default=1)
@@ -45,7 +45,7 @@ else:
     print("Currently using CPU (GPU is highly recommended)")
 
 if args.dataset == 'shanghaitech':
-    test_loader = get_test_shanghaitechpartA_dataloader(labeled_root=args.test_path, gt=args.gt_kernel, labeled_file_list=None)
+    test_loader = get_test_shanghaitechpartA_dataloader(file_list=args.test_files)
 elif args.dataset == 'nwpu':
     # test_loader = create_test_nwpu_dataloader(file_list=args.test_filelist)
     pass
