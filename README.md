@@ -29,7 +29,34 @@ The density map generation codes are in Make_Datasets folders.
 
 After all density maps are generated, run ```ls -R /xx/xxx/xxx/*.jpg > train.txt```, ```ls -R /xx/xxx/xxx/*.jpg > val.txt```, ```ls -R /xx/xxx/xxx/*.jpg > test.txt``` to generate txt files for training, validating and testing.
 
+
+# Quick Start
+
+- train
+
+run ```sh ./train.sh``` or run the following command.
+```
+python main.py --dataset shanghaitechpa \
+--model CSRNet \
+--train-files /home/jqgao/workspace/CrowdCounting/TrainingTestingFileLists/ShanghaiTechPartA_full_origin_train.txt \
+--val-files /home/jqgao/workspace/CrowdCounting/TrainingTestingFileLists/ShanghaiTechPartA_full_origin_val.txt \
+--gpu-devices 4 \
+--lr 1e-5 \
+--optim adam \
+--loss mseloss \
+--checkpoints ./checkpoints/demo \
+--summary-writer ./runs/demo
+```
+
+- test
+
+run the following command.
+```
+python test.py --test-files /home/jqgao/workspace/CrowdCounting/TrainingTestingFileLists/ShanghaiTechPartA_full_origin_test.txt --best-model /home/jqgao/workspace/DIP2021/checkpoints/demo/bestvalmodel.pth
+```
+
 # NWPU-Crowd Contest Platform
-https://www.crowdbenchmark.com/nwpucrowd.html 
+https://www.crowdbenchmark.com/nwpucrowd.html
+
 
 # Reference
