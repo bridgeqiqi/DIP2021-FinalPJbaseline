@@ -30,9 +30,9 @@ The density map generation codes are in Make_Datasets folders.
 After all density maps are generated, run ```ls -R /xx/xxx/xxx/*.jpg > train.txt```, ```ls -R /xx/xxx/xxx/*.jpg > val.txt```, ```ls -R /xx/xxx/xxx/*.jpg > test.txt``` to generate txt files for training, validating and testing.
 
 
-# Quick Start
+# Quick Start for Training and Testing
 
-- train
+- Training
 
 run ```sh ./train.sh``` or run the following command.
 ```
@@ -48,7 +48,7 @@ python main.py --dataset shanghaitechpa \
 --summary-writer ./runs/demo
 ```
 
-- test
+- Testing
 
 run the following command.
 ```
