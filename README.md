@@ -60,3 +60,13 @@ https://www.crowdbenchmark.com/nwpucrowd.html
 
 
 # Reference
+- [CVPR 2015] [Cross-scene Crowd Counting via Deep Convolutional Neural Networks](https://openaccess.thecvf.com/content_cvpr_2015/papers/Zhang_Cross-Scene_Crowd_Counting_2015_CVPR_paper.pdf)
+- [CVPR 2016] [Single-Image Crowd Counting via Multi-Column Convolutional Neural Network](https://openaccess.thecvf.com/content_cvpr_2016/papers/Zhang_Single-Image_Crowd_Counting_CVPR_2016_paper.pdf) (MCNN, ShanghaiTech Dataset)
+- [CVPR 2018] [CSRNet: Dilated Convolutional Neural Networks for Understanding the Highly Congested Scenes](https://openaccess.thecvf.com/content_cvpr_2018/papers/Li_CSRNet_Dilated_Convolutional_CVPR_2018_paper.pdf)
+- [ECCV 2018] [Composition Loss for Counting, Density Map Estimation and Localization in Dense Crowds](https://openaccess.thecvf.com/content_ECCV_2018/papers/Haroon_Idrees_Composition_Loss_for_ECCV_2018_paper.pdf) (UCF-QNRF Dataset)
+- [CVPR 2019] [Learning from Synthetic Data for Crowd Counting in the Wild](https://openaccess.thecvf.com/content_CVPR_2019/papers/Wang_Learning_From_Synthetic_Data_for_Crowd_Counting_in_the_Wild_CVPR_2019_paper.pdf) (GCC Dataset)
+- [TIP 2019] [PaDNet: Pan-Density Crowd Counting](https://arxiv.org/pdf/1811.02805.pdf) 
+- [PAMI 2020] [NWPU-Crowd: A Large-Scale Benchmark for Crowd Counting and Localization](https://arxiv.org/pdf/2001.03360.pdf) (NWPU-Crowd Dataset)
+- [Survey] [CNN-based Single Image Crowd Counting: Network Design, Loss Function and Supervisory Signal](https://arxiv.org/pdf/2012.15685.pdf)
+- [Survey] [CNN-based Density Estimation and Crowd Counting: A Survey](https://arxiv.org/pdf/2003.12783.pdf)
+- [Survey] [A Survey of Recent Advances in CNN-based Single Image Crowd Counting and Density Estimation](https://arxiv.org/pdf/1707.01202.pdf)
